@@ -1,0 +1,2 @@
+class LocationStrategy : ShipmentStrategy {
+}
