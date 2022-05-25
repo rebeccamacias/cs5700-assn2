@@ -2,7 +2,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 
-class TrackerViewHelper() {
+class TrackerViewHelper : Observer {
     var result by mutableStateOf("")
     var userInput by mutableStateOf("")
     private val shipmentStrategies = mapOf<String, ShipmentStrategy>(
@@ -29,6 +29,11 @@ class TrackerViewHelper() {
 
     fun stopTracking() {
         //stop tracking, delete the object
+    }
+
+    override fun update() {
+        TODO("Not yet implemented")
+        //add a new update to the card
     }
 
 }
